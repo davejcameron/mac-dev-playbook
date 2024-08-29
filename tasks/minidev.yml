@@ -1,0 +1,8 @@
+---
+# Task to install minidev
+- name: Install minidev
+  shell: |
+    curl https://raw.githubusercontent.com/burke/minidev/master/install.sh | bash
+  args:
+    executable: /bin/bash
+  changed_when: false
