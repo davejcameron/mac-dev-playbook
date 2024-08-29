@@ -1,0 +1,7 @@
+commands:
+  run:
+    desc: Runs the sync
+    run: ansible-playbook main.yml --ask-become-pass
+  build:
+    desc: Installs the required roles
+    run: ansible-galaxy install -r requirements.yml
